@@ -9,8 +9,9 @@ import {Book} from '../book'
   styleUrls: ['./view-component.component.css']
 })
 export class ViewComponentComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor(public _service:BookstoreService) { } 
 
   ngOnInit(): void {
       this.getbooks();
